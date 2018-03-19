@@ -16,7 +16,16 @@
         @import url('https://fonts.googleapis.com/css?family=Raleway');
         #first {
             background-color: black;
-            background: url(home-bg-1.png) no-repeat center fixed;
+            background: url(background2.png) no-repeat center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        #second {
+            background-color: black;
+            background: url(home-bg-1.png) no-repeat center;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -113,7 +122,14 @@
             font-family: 'Trebuchet MS';
             font-weight: bold;
             color: #369d40;
-            text-shadow: 1px 1px 3px #000000;
+            text-shadow: 1px 1px 3px #000;
+            font-size: 60px;
+        }
+
+        .titletext2 {
+            font-family: 'Trebuchet MS';
+            font-weight: bold;
+            color: #369d40;
         }
 
         .desc {
@@ -167,9 +183,13 @@
         }
 
         .jumbotron {
-            font-family: oswald, sans-serif;
-            background-color: rgba(40, 163, 193, 0.75);
+            font-family: 'Trebuchet MS';
+            background-color: rgba(54, 157, 64, 0.75);
             color: white;
+            text-align: center;
+            font-weight: lighter;
+            font-size: 70px;
+            text-shadow: 1px 1px 3px #000;
         }
 
         .grey-box {
@@ -250,6 +270,20 @@
         .restricted {
             margin-right: 500px;
         }
+
+        .right-restrict {
+            margin-left: 425px;
+            margin-right: 10px;
+        }
+
+        .rrindent {
+            margin-left: 475px;
+            margin-right: 50px;
+        }
+
+        span {
+            color: #369d40;
+        }
     </style>
 </head>
 
@@ -268,12 +302,32 @@
                 <p></p>
             </div>
         </div>-->
-        <a href="problem.html">PROBLEM</a>
         <a href="procedure.html">PROCEDURE</a>
         <a href="results.html">RESULTS</a>
         <a href="conclusion.html">CONCLUSION</a>
     </div>
-
+    <br><br><br>
+    <div class="container-fluid" id="first">
+        <h1 class="titletext2 right-restrict">Testing Procedure</h1>
+        <br>
+        <h4 class="desc rrindent">1. Once the app is developed, three things will be tested: the time it took for the results to load,
+          if the results loaded, whether the search results are accurate or not, and whether or not the filters properly narrow down
+          the search results.</h4>
+        <h4 class="desc rrindent">2. Once the app is loaded on the iPhone, start a timer and search up a certain location that is
+          available on the database and see if results show up. Write down how long it took for the results to load. Mark down any
+          observations, such as any glitches.</h4>
+        <h4 class="desc rrindent">3. Verify whether or not all the information displayed is relevant or not. Make sure outdated
+          information and opportunities that are too far away from the location are presented. Continue to mark down any glitches
+          observed.</h4>
+        <h4 class="desc rrindent">4. Apply the time filter to the results, and see if the results fit within the time slot chosen.
+          Record the data, along with any glitches noticed, if any.</h4>
+        <h4 class="desc rrindent">5. Apply the distance filter to the results, and see if the results are within the distance chosen.
+          Record the data, along with any glitches noticed, if any.</h4>
+        <h4 class="desc rrindent">6. Repeat steps 2-5 for 4 more different locations.</h4>
+        <h4 class="desc rrindent">7. Once the first set of data is collected, work on the app to fix any bugs noticed. Data will be
+          collected a second time on the improved version of the app.</h4>
+        <br>
+    </div>
     <script>
     </script>
 </body>
